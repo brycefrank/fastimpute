@@ -204,6 +204,7 @@ def impute(target_xs, clf, raster_info, outdir="output", linechunk=1000, class_p
             # in 1D space
             start = shape[1] * row
             end = start + shape[1] * linechunk
+            # TODO implement ignore_nan option
             line = target_xs[start:end, :]
 
             window = ((row, row + linechunk), (0, shape[1]))

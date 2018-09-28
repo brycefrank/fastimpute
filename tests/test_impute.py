@@ -1,6 +1,8 @@
 # test zonal stats
 import os
 
+#TODO Make raster with NaNs
+
 DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 explanatory_rasters = [os.path.join(DATA, x) for x in
                        "dtmean8_12.img gt_dem.img int_cnl_euc.img pmean_all.img "
